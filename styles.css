@@ -14,7 +14,6 @@ html {
 .nav__container,
 .intro__container,
 .values__container,
-.footer__container,
 .container {
   width: 100%;
   margin: 32px 12px;
@@ -372,8 +371,8 @@ input {
                 */
 
 #features {
-  margin: 48px 0;
-  padding: 48px 0;
+  margin: 48px 8px;
+  padding: 48px 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -443,7 +442,8 @@ input {
 
                     */
 #quality-work {
-  padding: 48px 0;
+  margin: 48px 8px;
+  padding: 48px 8px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -490,8 +490,8 @@ input {
             */
 
 #steps {
-  margin: 48px 0;
-  padding: 48px 0;
+  margin: 48px 8px;
+  padding: 48px 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -569,8 +569,8 @@ input {
             */
 
 #values {
-  margin: 48px 0;
-  padding: 48px 0;
+  margin: 48px 8px;
+  padding: 48px 8px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -652,8 +652,8 @@ input {
                 */
 
 #pricing {
-  margin: 48px 0;
-  padding: 48px 0;
+  margin: 48px 8px;
+  padding: 48px 8px;
   width: 100%;
 }
 
@@ -836,8 +836,8 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 48px 0;
-  padding: 48px 0;
+  margin: 48px 8px;
+  padding: 48px 8px;
 }
 
 .testimonials__container {
@@ -917,11 +917,14 @@ input {
 
 .testimonials__user {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .testimonials__user--info {
   display: flex;
   flex-direction: column;
+  text-align: center;
   line-height: 0.75;
 }
 
@@ -929,6 +932,7 @@ input {
   font-size: 20px;
   color: #132b4ff0;
   font-weight: 700;
+  padding-left: 6px;
 }
 
 .testimonials__director--title {
@@ -950,11 +954,10 @@ input {
             */
 
 #faq {
-  margin: 48px 0;
-  padding: 48px 0;
+  margin: 48px 8px;
+  padding: 48px 8px;
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -963,6 +966,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .faq__title {
@@ -1014,7 +1018,6 @@ input {
         */
 
 #ad {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1066,6 +1069,7 @@ input {
 
 #footer {
   width: 100%;
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1074,6 +1078,11 @@ input {
 .footer__row {
   background: #6415ff;
   border-bottom: 1.5px solid rgba(211, 211, 211, 0.269);
+}
+
+.footer__container {
+  width: 100%;
+  max-width: 1200px;
 }
 
 .footer__list {
@@ -1306,10 +1315,10 @@ input {
     padding: 0 24px;
   }
 
-#quality-work {
-  margin: 24px 12px;
-  padding: 24px 12px;
-}
+  #quality-work {
+    margin: 24px 12px;
+    padding: 24px 12px;
+  }
 
   .quality-work__title {
     font-size: 36px;
@@ -1411,62 +1420,61 @@ input {
     font-size: 16px;
   }
 
-  #faq {
-    max-width: 768px;
-    margin-right: 0;
-    padding-right: 0;
-    margin: 0 12px;
-    padding: 0 12px;
+  .testimonials__user--name {
+    padding-left: 12px;
   }
 
-  .faq__para {
-    width: 100%;
-    max-width: 600px;
-    font-size: 16px;
+  .testimonials__user--info {
+    padding-right: 64px;
   }
+}
 
-  .container {
-    margin: 12px 0;
-    padding: 12px 0;
-  }
-
-  .ad__text {
-    padding: 0;
-    margin: 0;
-    font-size: 32px;
-    width: 100%;
-    padding-bottom: 24px;
-  }
-
-  .ad__buttons {
-    padding: 0;
-    margin: 0;
-  }
-
-  #ad {
-    margin: 0 12px;
-    padding: 0 12px;
-  }
-
-  .container {
-    margin-right: 0;
-    padding-right: 0;
-  }
-  .ad__row {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
- .footer__container {
+#faq {
   margin-right: 0;
   padding-right: 0;
- }
-
- 
+  margin: 0 12px;
+  padding: 0 12px;
 }
+
+.faq__para {
+  width: 100%;
+  max-width: 600px;
+  font-size: 16px;
+}
+
+.ad__text {
+  padding: 0;
+  margin: 0;
+  font-size: 32px;
+  width: 100%;
+  padding-bottom: 24px;
+}
+
+.ad__buttons {
+  padding: 0;
+  margin: 0;
+}
+
+#ad {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ad__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#footer {
+  width: 100%;
+  max-width: 1200px;
+}
+
 
 /* SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width: 576px) {
@@ -1554,10 +1562,10 @@ input {
     width: 60px;
   }
 
-#quality-work {
-  margin: 0 8px;
-  padding: 0 8px;
-}
+  #quality-work {
+    margin: 0 8px;
+    padding: 0 8px;
+  }
 
   .quality-work__wrapper {
     flex-direction: column-reverse;
@@ -1696,6 +1704,12 @@ input {
     max-width: 300px;
   }
 
+  #testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .testimonials__container {
     margin: 0;
     padding: 0;
@@ -1711,6 +1725,10 @@ input {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .testimonials__user--info {
+    padding-right: 0;
   }
 
   .testimonials__info {
@@ -1730,11 +1748,17 @@ input {
   }
 
   .testimonials__customer--review {
-    padding: 0 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .testimonials__user {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .testimonials__img--director {
@@ -1747,6 +1771,12 @@ input {
     justify-content: center;
   }
 
+  #faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .faq__title {
     font-size: 32px;
     letter-spacing: 1.5px;
@@ -1757,7 +1787,6 @@ input {
   }
 
   .dropdown__list {
-    display: flex;
     margin: 8px 16px;
   }
 
@@ -1791,6 +1820,14 @@ input {
     width: 125px;
     margin: 0;
     font-size: 14px;
+  }
+
+  .footer__container {
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+    margin-left: 0;
+    padding-left: 0;
   }
 
   .footer__list {
@@ -1830,4 +1867,4 @@ input {
   .footer__info {
     flex-direction: column;
   }
-}
+
